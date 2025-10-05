@@ -17,6 +17,7 @@ A Flask web application that simulates the effects of kinetic impactor missions 
    ```bash
    pip install -r requirements.txt
    ```
+3. **This code runs into some issues on newer versions of Python, It is recommended to use this on Python 3.10.11.**
 
 ## Usage
 
@@ -32,7 +33,7 @@ A Flask web application that simulates the effects of kinetic impactor missions 
 
 3. **Enter simulation parameters:**
    - **Asteroid SPK ID**: Unique identifier for the target asteroid (e.g., 2000433 for Eros)
-   - **NASA API Key**: Use "DEMO_KEY" for testing or get a free API key from NASA
+   - **NASA API Key**: Use "DEMO_KEY" for testing or get a free API key from NASA (https://api.nasa.gov/)
    - **Impact Direction**: Choose whether to impact along velocity, against velocity, or radially
    - **Impactor Mass**: Mass of the kinetic impactor spacecraft in kg
    - **Impact Velocity**: Velocity of impact in m/s
@@ -87,31 +88,4 @@ The application uses:
 - **Plotly** for interactive 3D orbit visualizations
 - **Bootstrap** for responsive UI components
 
-## Original Notebook
 
-This Flask application is based on the `Kinetic_Impactor.ipynb` Jupyter notebook, converting the interactive notebook cells into a web-based interface.
-
-## Development
-
-To run in development mode:
-```bash
-export FLASK_ENV=development
-python app.py
-```
-
-## Production Deployment
-
-For production deployment, consider using:
-- **Gunicorn** as the WSGI server
-- **Nginx** as a reverse proxy
-- **Docker** for containerization
-
-Example with Gunicorn:
-```bash
-pip install gunicorn
-gunicorn -w 4 -b 0.0.0.0:5000 app:app
-```
-
-## License
-
-This project is open source and available under the MIT License.
