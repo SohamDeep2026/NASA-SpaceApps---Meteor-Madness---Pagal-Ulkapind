@@ -7,6 +7,9 @@ The project thus tackles the challenge of translating complex astronomical threa
 
 This effort remains vital given that planetary defense is a global concern. By turning raw NASA and USGS data into a user-friendly interactive tool, our project increases awareness, preparedness, and scientific engagement around asteroid risks and potential responses.
 
+## Website Link
+nasa-smoky-theta.vercel.app
+
 ## APIs and Datasets used
   1. NASA NEO API
   2. NASA SEDAC API
